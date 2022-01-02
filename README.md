@@ -29,4 +29,4 @@ node.js command line 於根資料夾輸入
 > smcat smcat/result.smcat
 
 結果圖
-![FSM] (blob/main/smcat/result.svg)
+![alt text](https://github.com/IIIHSUAN/LineBot/blob/main/smcat/result.svg?raw=true)
