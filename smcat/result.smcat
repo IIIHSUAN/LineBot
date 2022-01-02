@@ -1,0 +1,27 @@
+initial,
+Start:
+ Shuffle cards stack
+ Give client two cards & server one card,
+Ask,
+Add,
+NotAdd,
+ServerRound:
+ server determine pass or take one card,
+Check:
+ check for reaching game Final ( if one exceeds 21 or reaches 21),
+final;
+
+initial -> Start;
+Start-> Ask;
+Ask->Add:  Client add one card;
+Ask->NotAdd: Client pass;
+
+Add->ServerRound;
+NotAdd->ServerRound;
+
+ServerRound->Check: if Server wanna continue;
+
+ServerRound-> final: Server pass;
+
+Check->Ask: false;
+Check->final: true;

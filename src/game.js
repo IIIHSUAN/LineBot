@@ -105,7 +105,7 @@ module.exports = function() {
 
       if(current_state==state.Idle) {
         console.log('  state: Idle');
-        if(input=='0') {
+        if(input=='start') {
           current_state = state.Start, str += 'Game Start\n';
           input = '';
           continue;
