@@ -20,4 +20,4 @@ node.js command line 於根資料夾輸入
 > smcat smcat/result.smcat
 
 結果圖
-![FSM](https://github.com/IIIHSUAN/LineBot/tree/main/smcat/result.svg)
+[id]: (https://github.com/IIIHSUAN/LineBot/tree/main/smcat/result.svg)
