@@ -32,6 +32,9 @@ node.js command line 於根資料夾輸入
 
 ![alt text](https://github.com/IIIHSUAN/LineBot/blob/main/smcat/result.svg?raw=true)
 
+## 程式碼
+環境變數設在.env檔；script, module detail在package.json；主程式碼都位於src資料夾
+
 ## 執行結果
 
 左為node.js伺服器 右為line聊天畫面
