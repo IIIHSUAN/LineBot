@@ -34,4 +34,4 @@ node.js command line 於根資料夾輸入
 
 ## 執行結果
 
-![alt text](https://imgur.com/a/dZRFrMY)
+![alt text](https://i.imgur.com/UMHXKVg_d.webp?maxwidth=760&fidelity=grand)
