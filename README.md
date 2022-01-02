@@ -9,3 +9,15 @@
 開始: 輸入"start"
 選擇加牌與否: 輸入"y"或"n"
 重新開始: 一旦到了結算畫面，輸入"re"
+
+## 執行伺服器
+node.js command line 於根資料夾輸入
+> npm run dev 或 npm run start
+
+## 繪製FSM
+套用模組 https://www.npmjs.com/package/state-machine-cat
+執行 node.js command line 於根資料夾輸入
+> smcat smcat/result.smcat
+
+結果圖
+https://github.com/IIIHSUAN/LineBot/tree/main/smcat/result.svg
