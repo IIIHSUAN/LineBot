@@ -28,10 +28,15 @@ app.post('/', parser, function (req, res) {
 });
 
 bot.on('message', function (event) {
-  console.log(event.message.text);
-  event.reply({ type: 'text', text: 'Hello, world' });
+  //console.log(event.message.text);
+  
+  event.reply({ type: 'text', text: run(event.message.text) });
 });
 
 app.listen(process.env.PORT, function () {
   console.log('LineBot is running on port '+process.env.PORT);
 });
+
+/******************************************/
+
+require('./game')();
