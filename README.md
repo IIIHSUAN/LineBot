@@ -2,7 +2,13 @@
 計算理論期末 Project
 
 ## 遊戲規則
-使用者為玩家，與莊家(伺服器)進行1對1 21點
+使用者為玩家，與莊家(伺服器)進行1對1 21點遊戲
+
+###簡易規則
+1. 目標: 手牌點數越接近21點者勝，若一方超過則判輸，若兩方均超過則莊家輸 (莊家先兌)
+2. 猜大小: 玩家決定是否加牌
+3. 結算時機: 玩家決定抽牌與否後，輪到莊家決定是否抽牌，若是則回到2，若否則結束遊戲並結算
+4. 點數計算: 數字牌點數與其數字相同，A 可選擇為1或11，其餘 J, Q, K 為10
 
 (詳細規則請參閱 https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%8D%81%E4%B8%80%E9%BB%9E)
 
@@ -23,4 +29,4 @@ node.js command line 於根資料夾輸入
 > smcat smcat/result.smcat
 
 結果圖
-https://raw.githubusercontent.com/IIIHSUAN/LineBot/smcat/result.svg
+https://github.com/IIIHSUAN/LineBot/blob/main/smcat/result.svg
