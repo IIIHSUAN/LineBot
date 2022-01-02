@@ -34,4 +34,6 @@ node.js command line 於根資料夾輸入
 
 ## 執行結果
 
+左為node.js伺服器 右為line聊天畫面
+
 ![alt text](https://i.imgur.com/UMHXKVg_d.webp?maxwidth=760&fidelity=grand)
