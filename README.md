@@ -28,5 +28,10 @@ node.js command line 於根資料夾輸入
 執行 node.js command line 於根資料夾輸入
 > smcat smcat/result.smcat
 
-結果圖
+結果圖 (存放於 smcat/result.svg)
+
 ![alt text](https://github.com/IIIHSUAN/LineBot/blob/main/smcat/result.svg?raw=true)
+
+## 執行結果
+
+![alt text](https://imgur.com/a/dZRFrMY)
