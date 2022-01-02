@@ -1,12 +1,12 @@
 require('dotenv').config();
-const bg_channel={
-	channelId: process.env.BG_CHANNEL_ID,
-	channelSecret: process.env.BG_CHANNEL_SECRET,
-	channelAccessToken: process.env.BG_CHANNEL_ACCESS_TOKEN
+const _channel={
+	channelId: process.env._CHANNEL_ID,
+	channelSecret: process.env._CHANNEL_SECRET,
+	channelAccessToken: process.env._CHANNEL_ACCESS_TOKEN
 };
 
 const linebot = require('linebot');
-const bot = linebot(bg_channel);
+const bot = linebot(_channel);
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -19,7 +19,7 @@ const parser = bodyParser.json({
   }
 });
 
-app.post('/LINEBOT_BGCERT', parser, function (req, res) {
+app.post('/', parser, function (req, res) {
   if (!bot.verify(req.rawBody, req.get('X-Line-Signature'))) {
     return res.sendStatus(400);
   }
@@ -28,10 +28,10 @@ app.post('/LINEBOT_BGCERT', parser, function (req, res) {
 });
 
 bot.on('message', function (event) {
-  //console.log(event.message.text);
+  console.log(event.message.text);
   event.reply({ type: 'text', text: 'Hello, world' });
 });
 
 app.listen(process.env.PORT, function () {
-  console.log('LineBot is running.');
+  console.log('LineBot is running on port '+process.env.PORT);
 });
